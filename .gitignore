@@ -57,3 +57,6 @@ mobile/config.js
 # Jasper files
 reports/*.jasper
 reports/*.jasper.hex
+
+# Locatation data .xlsx
+SL_Locations.xlsx
