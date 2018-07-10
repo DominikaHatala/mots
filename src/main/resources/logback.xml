@@ -1,0 +1,17 @@
+<configuration>
+
+  <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%d{yyyy-MMM-dd HH:mm:ss.SSS} [%thread] %highlight(%-5level) %cyan(%logger{15}) - %msg %n</pattern>
+    </encoder>
+  </appender>
+
+  <root level="error">
+    <appender-ref ref="CONSOLE" />
+  </root>
+
+  <logger name="org.motechproject.mots.Application" level="INFO" additivity="false">
+    <appender-ref ref="CONSOLE" />
+  </logger>
+
+</configuration>
